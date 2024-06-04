@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+/* Each channel */
+.channel {
+    border: 1px solid #ddd; /* Optional border for each channel */
+    padding: 10px; /* Optional padding for each channel */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns on smaller screens */
+    }
+    /* Add any other necessary adjustments for smaller screens */
+}
